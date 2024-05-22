@@ -1,0 +1,24 @@
+1- le mot-cle qui permet aux membres d'une classe(méthodes et proprietes) d'etre utilises sans avoir a instancier une nouvelle instance de la classe : "static".
+
+2- la methode magique __toString() permet a une classe de decider comment se comporter lorsqu'elle est traitee comme une chaine de caractères. cette methode est appelee lorsqu'on essaie d'obtenir une representation textuelle de l'objet.
+
+3- <?php 
+$filename = 'statistique.txt';
+
+if (file_exists($filename)){
+	$file = fopen($filename, 'r');
+	
+	while(!feof($file)){
+		$line = fgets($file);
+		echo $line . '<br>';
+	}
+	fclose($file);
+}else{
+	echo "Le fichier n'existe pas.";
+}
+?>
+
+4- la methode qui trie le tableau, selon la cle,par ordre decroissant est 'krsort()'.
+5- <?php 
+setcookies('couleur','ROUGE',time()+(20+86400)); 
+?>
