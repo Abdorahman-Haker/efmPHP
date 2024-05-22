@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $prenom = $_POST['prenom'];
         $dateNaissance = $_POST['dateNaissance'];
         $idFiliere = $_POST['filiere'];
-        $photoProfil = $stagiaire['photoProfil']; // Default to current profile picture
+        $photoProfil = $stagiaire['photoProfil']; 
         
         if (isset($_FILES['photoProfil']) && $_FILES['photoProfil']['error'] == 0) {
             $target_dir = "img/";
